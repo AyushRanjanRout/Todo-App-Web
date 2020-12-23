@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TODO APP</title>
+  <link rel="stylesheet" type="text/css" href="css/todoapp.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+</head>
+<body style="margin:15px;">
+  <h1 class="app-title">TODO LIST</h1>
+  <div id="todo-view">
+    <ul id="list-content">
+    </ul>
+
+    <p id="input-add-item">
+      <input type="text" class="form-control" id="input-content" style="width: 50%; border-radius: 50px ; margin-left: 25%; padding: 10px; " >
+       <button type="button" id="button-add-item"  class="btn btn-warning" style="border-radius: 50px; margin-left: 25%; width: 50%; margin-top: 20px; padding: 10px;">ADD</button>
+    </p>
+    <p>
+      
+      <button type="button" id="button-view-finished" class="btn btn-success" style="border-radius: 50px;margin-left: 25%; width: 50%; margin-top: 20px; padding: 10px;"><i class="fas fa-check-circle"></i>Check FINISHED</button>
+
+    </p>
+  </div>
+  <div style="margin: 15px" id="finished-view" class="hidden">
+    <ul id="finished-list-content">
+    </ul>
+    <p>
+      <button type="button" id="button-return" class="btn btn-success" style="border-radius: 50px;margin-left: 35%; width: 26%; margin-top: 20px; padding: 10px;">RETURN</button>
+    </p>
+  </div>
+  <script src="model/timeStamp.js"></script>
+  <script src="model/todoItem.js"></script>
+  <script src="model/todoList.js"></script>
+  <script src="item.js"></script>
+  <script src="list.js"></script>
+  <script src="todoapp.js"></script>
+</body>
+</html>
